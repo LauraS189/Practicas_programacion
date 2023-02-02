@@ -1,0 +1,100 @@
+alt+z que no se extienda el texto
+shif+alt para duplicar
+ctrl+k+c para comentar
+ctrl+c+k para descomentar
+ctrl+d para editar varias linas al tiempo
+ctrl+space para ver otros atributos en css dentro de una etiqueta
+
+* Usar HTML5 y tap para un código base
+* Algunos tag funcionan con mayuscula y miniscula, ej: img or IMG
+
+
+------------------------------------- HTML -----------------------------------
+INFORMATION
+1. DOCTYPE: indicates that is a HTML document
+2. html: indicates the start or a web document
+3. head: is firts block, giving informations to the browser
+4. meta: is the form that you encode and writes keywords and summary information about the document
+5. title: is the title bar in browser window
+6. body: is a block that contais all tags and attributes that allow show information
+7. pre: Speces marked in the source are displayes as they are, cuando se escribe un texto con saltos de linea, los tiene en cuenta a diferencia de la p
+8. hr: Change de mood when the subject changes, Horizontal line
+9. q: Display citations on a line with other content without line breaks
+10: b: negrilla 
+11. em: whem emphasize a specific part of the flow
+12. i: when emphasize a italic  line
+13. mark: highlight a specific part of the flow, yellow color
+14. span: Bind in line
+15. ul : unordered list. point list
+16. li : unordered or ordered list
+17. ol : ordered list . lista de numeros o letras type="a,A,i,I" etc
+18. dl, dt, dd: Descriptionor title list 
+19. aside: sirve para agregar una seccion adicional en el documento, como una columna, mirar ejemplo en 1005/index
+20. Targer attribute in a-href:
+    - blank: The link contet opens in a neew window or tab(al presionar el link abre en otra ventana)
+    -self: abre el link en la misma ventana
+    -parent: Abre el documento en el parent frame
+    _top: abre el link del documento en el cuerpo completo de la ventana
+21: Anchor: La ubicación del link y hacia donde dirige el link dentor del documento. 
+22. Area: es un tag usado para imgemap, define lo que uno quiere que se vea de la imagen, se pueden quitar los bordes y etc. 
+23. SVG: Sclable Vector Graphics
+24. form tag: Crear formularios para entrada de datos
+25. en el label el for se usa para nombrar con que etiqueta input esta relacionada, y en la etiqueta input se coloca el id y se relaciona con el mismo nombre del for
+26. fieldset: tag de un grupo de labels e inputs
+27. legend: Leyenda que se usara como titulo en cada uno de los fieldset
+28.Hidden input: No puede ser modificada por el usuario, no se muestra en la pantalla 
+29. input submit es el que se usa como boton para finalizar el formulario
+30. placeholder. es el texto de muestra o ejemplo que se muestra en un label
+31.autofocus: es para que cuando se seleccione el label se resalte de color negro
+32.readonly: No deja modificar la etiqueta 
+33. autofocus required: Para información necesaria dentro del formulario
+
+--------------------------------------- CSS ----------------------------------
+1.https://www.csszengarden.com
+2.Style format 
+    p(selector){
+        text-align(atribute):center(value);
+    }
+3. Rules:
+    -Style priority:
+        1) Depending on how important
+            1.important Style: Style created by the system.no user control
+            2.Generic Style: Style created by 
+            3.browser Style
+        2)Depending on how limited:
+            1.inline Style
+            2.id style
+            3.class style
+            4.tag style
+        3) Dependingto source order:
+            1. if important,and specifity are the same, they are determianted according to theorder of the source
+            2.
+    -Inheritance Style:
+        1. style propieties in the parent element are passed to the child element unless a style is a specified separately in the child element
+        2.Inheritance is an effective way to create style sheets
+
+*************************************************
+Font-family attribute
+-Google fonts (https://fonts.google.com/)
+    1.Se puede importar de 2 formas, con links en el head de html o creando un style desde el archivo de html
+    <style>
+        @import url(link de google fonts)   
+    </style>
+    link de google fonts         
+    en el texto agregar la clase de la fuente:
+    2.Luego colocar el tipo de fuente (en una etiqueta de css) al texto
+
+------------------------------------ JAVASCRIPT --------------------------------
+Para colocar el document de javascript dentor del documento de html se debe hacer por medio de:
+    <script src=""></script>
+Exist expression and statements
+
+-Declarar variables: 
+        var nombre_de_la_variable;
+        var hola=100;
+-Comparison operator:
+    -True ==
+    -Flase ===
+-switch statements:
+is conevnient when are many comands 
+    switch siempre poner el break

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+
+    <style>
+        td{
+            width: 50px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Click button for LED </h1>
+    <table border="1">
+        <tr>
+            <td><p id="color1">1</p></td>
+            <td><p id="color2">2</p></td>
+            <td><p id="color3">3</p></td>
+        </tr>
+        <tr>
+            <td><p id="color4">4</p></td>
+            <td><p id="color5">5</p></td>
+            <td><p id="color6">6</p></td>
+        </tr>
+        <tr>
+            <td><p id="color7">7</p></td>
+            <td><p id="color8">8</p></td>
+            <td><p id="color9">9</p></td>
+        </tr>
+    </table>
+    <h1>LED </h1>
+    <table border="1">
+        <tr>
+            <td id="cfinal1"><p>1</p></td>
+            <td id="cfinal2"><p>2</p></td>
+            <td id="cfinal3"><p>3</p></td>
+        </tr>
+        <tr>
+            <td id="cfinal4"><p>4</p></td>
+            <td id="cfinal5"><p>5</p></td>
+            <td id="cfinal6"><p>6</p></td>
+        </tr>
+        <tr>
+            <td id="cfinal7"><p>7</p></td>
+            <td id="cfinal8"><p>8</p></td>
+            <td id="cfinal9"><p>9</p></td>
+        </tr>
+    </table>
+    <h1>PROMPT</h1>
+    <table border="1">
+        <tr>
+            <td id="lg1"><p>1</p></td>
+            <td id="lg2"><p>2</p></td>
+            <td id="lg3"><p>3</p></td>
+        </tr>
+        <tr>
+            <td id="lg4"><p>4</p></td>
+            <td id="lg5"><p>5</p></td>
+            <td id="lg6"><p>6</p></td>
+        </tr>
+        <tr>
+            <td id="lg7"><p>7</p></td>
+            <td id="lg8"><p>8</p></td>
+            <td id="lg9"><p>9</p></td>
+        </tr>
+    </table>
+
+    <script>
+        var c1 = document.querySelector('#color1');
+        var c2 = document.querySelector('#color2');
+        var c3 = document.querySelector('#color3');
+        var c4 = document.querySelector('#color4');
+        var c5 = document.querySelector('#color5');
+        var c6 = document.querySelector('#color6');
+        var c7 = document.querySelector('#color7');
+        var c8 = document.querySelector('#color8');
+        var c9 = document.querySelector('#color9');
+        var t1 = document.querySelector('#cfinal1');
+        var t2 = document.querySelector('#cfinal2');
+        var t3 = document.querySelector('#cfinal3');
+        var t4 = document.querySelector('#cfinal4');
+        var t5 = document.querySelector('#cfinal5');
+        var t6 = document.querySelector('#cfinal6');
+        var t7 = document.querySelector('#cfinal7');
+        var t8 = document.querySelector('#cfinal8');
+        var t9 = document.querySelector('#cfinal9');
+        var l1 = document.querySelector('#lg1');
+        var l2 = document.querySelector('#lg2');
+        var l3 = document.querySelector('#lg3');
+        var l4 = document.querySelector('#lg4');
+        var l5 = document.querySelector('#lg5');
+        var l6 = document.querySelector('#lg6');
+        var l7 = document.querySelector('#lg7');
+        var l8 = document.querySelector('#lg8');
+        var l9 = document.querySelector('#lg9');
+
+        //BOTON 1    
+        c1.onclick = function(){
+            cfinal1.bgColor = 'red';
+        }
+        t1.onclick = function clickAndPrompt(){
+            var fcolor = prompt("Which color do you want?");
+            l1.style.color = fcolor;
+        }
+        l1.onclick = function(){
+            c1.style.background = l1.style.color;
+        }
+
+        //BOTON 2
+        c2.onclick = function(){
+            cfinal2.bgColor = 'blue';
+        }
+        t2.onclick = function clickAndPrompt(){
+            var fcolor = prompt("Which color do you want?");
+            l2.style.color = fcolor;
+        }
+        l2.onclick = function(){
+            c2.style.background = l2.style.color;
+        }
+
+        //BOTON 3
+        c3.onclick = function(){
+            cfinal3.bgColor = 'green';
+        }
+        t3.onclick = function clickAndPrompt(){
+            var fcolor = prompt("Which color do you want?");
+            l3.style.color = fcolor;
+        }
+        l3.onclick = function(){
+            c3.style.background = l3.style.color;
+        }
+        //BOTON 4
+        c4.onclick = function(){
+            cfinal4.bgColor = 'aqua';
+        }
+        t4.onclick = function clickAndPrompt(){
+            var fcolor = prompt("Which color do you want?");
+            l4.style.color = fcolor;
+        }
+        l4.onclick = function(){
+            c4.style.background = l4.style.color;
+        }
+        //BOTON 5
+        c5.onclick = function(){
+            cfinal5.bgColor = 'grey';
+        }
+        t5.onclick = function clickAndPrompt(){
+            var fcolor = prompt("Which color do you want?");
+            l5.style.color = fcolor;
+        }
+        l5.onclick = function(){
+            c5.style.background = l5.style.color;
+        }
+        //BOTON 6
+        c6.onclick = function(){
+            cfinal6.bgColor = 'violet';
+        }
+        t6.onclick = function clickAndPrompt(){
+            var fcolor = prompt("Which color do you want?");
+            l6.style.color = fcolor;
+        }
+        l6.onclick = function(){
+            c6.style.background = l6.style.color;
+        }
+        //BOTON 7
+        c7.onclick = function(){
+            cfinal7.bgColor = 'pink';
+        }
+        t7.onclick = function clickAndPrompt(){
+            var fcolor = prompt("Which color do you want?");
+            l7.style.color = fcolor;
+        }
+        l7.onclick = function(){
+            c7.style.background = l7.style.color;
+        }
+        //BOTON 8
+        c8.onclick = function(){
+            cfinal8.bgColor = 'orange';
+        }
+        t8.onclick = function clickAndPrompt(){
+            var fcolor = prompt("Which color do you want?");
+            l8.style.color = fcolor;
+        }
+        l8.onclick = function(){
+            c8.style.background = l8.style.color;
+        }
+        //BOTON 9
+        c9.onclick = function(){
+            cfinal9.bgColor = 'yellow';
+        }
+        t9.onclick = function clickAndPrompt(){
+            var fcolor = prompt("Which color do you want?");
+            l9.style.color = fcolor;
+        }
+        l9.onclick = function(){
+            c9.style.background = l9.style.color;
+        }
+        
+    </script>
+</body>
+</html>

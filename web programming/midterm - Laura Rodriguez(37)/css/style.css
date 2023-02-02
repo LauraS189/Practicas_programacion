@@ -1,0 +1,37 @@
+/* Style mid */
+
+#tit_mid{
+    color: red;
+}
+
+table, td{
+    border: 3px solid
+}
+
+/* Style Intro */
+
+.tit_1{
+    color: blue;
+}
+
+#namecard{
+    color: black;
+}
+
+#detail{
+    color: red;
+}
+
+#namecard, #detail{
+    border: 3px dashed;
+    width: 500px;
+}
+
+#info, #review{
+    width: 480px;
+}
+
+/* Style worksapce */
+#tit_works{
+    color: aqua;
+}

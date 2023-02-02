@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Private information</legend>
+            <ul>
+                <li>
+                    <label for="name">name</label>
+                    <input type="text" id="name" autofocus required placeholder="Escriba su nombre" maxlength="5" >
+                </li>
+                <li>
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+                </li>
+                <li>
+                    <input type="submit" value="submit">
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Login information</legend>
+            <ul>
+                <li>
+                    <label for="user-id">ID:</label> 
+                    <!--El for es para saber con que etiqueta input esta relacionada-->
+                    <input type="text" id="user-id">
+                </li>
+                <li>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" size="5">
+                    <input type="hidden" name="os" value="windows">
+                </li>
+                <li>
+                    <label for="search">Buscador</label>
+                    <input type="search" id="search">
+                </li>
+                <li>
+                    <label for="url">URL:</label>
+                    <input type="url" id="url">
+                </li>
+                <li>
+                    <label for="phone">Phone number:</label>
+                    <input type="tel" id="phone">
+                </li>
+                <li>
+                    <label for="number">Member number:</label>
+                    <input type="number" id="number" min="0" max="10" value="4" readonly>
+                    <!-- Value en el tag number es el valor por defecto -->
+                </li>
+                <li>
+                    <label for="rango">Member number:</label>
+                    <input type="range" id="rango" min="0" max="100" value="4">
+                    <!-- Value en el tag number es el valor por defecto -->
+                </li>
+                <li>
+                    <input type="submit" value="submit">
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Survey</legend>
+            <ul>
+                <li>
+                    <p>Best class?</p>
+                    <label><input type="radio" name="subject" value="web" for="">Web programming</label>
+                    <label><input type="radio" name="subject" value="mobile" for="">Mobile programming</label>
+                    <label><input type="radio" name="subject" value="python" for="">Python programming</label>
+                </li>            
+                <li>
+                    <p>Courses</p>
+                    <label><input type="checkbox" name="subject1" value="web" for="">Web programming</label>
+                    <label><input type="checkbox" name="subject2" value="mobile" for="">Mobile programming</label>
+                    <label><input type="checkbox" name="subject2" value="python" for="">Python programming</label>
+                </li>
+                <li>
+                    <label for="color">My identity color</label>
+                    <input type="color" id="color">
+                </li>
+                <li>
+                    <p>Birth day</p>
+                    <input type="date" name="" id="">
+                </li>
+                <li>
+                    <p>Period</p>
+                    <label for="start">Start:<input type="date" id="start" value="2002-04-27"></label>
+                    <label for="end">End:<input type="datetime-local" id="end"></label>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Select</legend>
+            <select id="major">
+                <optgroup label="major">
+                    <option value="telecommunications">Telecommunications</option>
+                    <option value="mechanic">Mechanic</option>
+                    <option value="medicine">Medicine</option>
+                </optgroup>
+                <optgroup label="minor">
+                    <option value="AI">AI</option>
+                    <option value="programming">Programming</option>
+                    <option value="bigdata">Bigdata</option>
+                </optgroup>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Interesting field</legend>
+            <ul>
+                <li>
+                    <label for="interest"></label>
+                    <input type="text" id="interest" list="choice">
+                    <datalist id="choice">
+                        <option value="AI" label="AI"></option>
+                        <option value="bigdata" label="bigdata"></option>
+                    </datalist>
+                </li>
+            </ul>
+            
+        </fieldset>
+        <input type="reset" value="reset">
+    </form>
+</body>
+</html>

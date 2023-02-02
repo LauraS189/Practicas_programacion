@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+</head>
+<body>
+    <script>
+        var session = prompt("select session. 1-Marketing, 2-Dev, 3-Desing");
+        switch(session){
+            case "1":
+                document.write("<p>Marketing session wil be held in 201 rooms.</p>");
+                break;
+            case "2":
+                document.write("<p>Deveploment session wil be held in 202 rooms.</p>");
+                break;
+            case "2":
+                document.write("<p>Desing session wil be held in 301 rooms.</p>");
+                break;
+            default:    
+                alert("Input wrong number");        
+        }
+    </script>
+</body>
+</html>

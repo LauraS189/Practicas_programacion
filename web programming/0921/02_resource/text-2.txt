@@ -1,0 +1,8 @@
+A function to save local storage:
+
+     function savetheLocal(){
+          var second = document.getElementById("second");
+          var thevalue = second.value;
+          localStorage.setItem(1, thevalue);
+          gettheLocal();
+     }    

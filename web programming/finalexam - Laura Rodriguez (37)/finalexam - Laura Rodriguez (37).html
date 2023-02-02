@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final examn</title>
+
+    <style>
+        td{
+            width: 50px;
+            height: 50px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>LED</h1>
+    <table border="1">
+        <tr>
+            <td id="led1"><p>1</p></td>
+            <td id="led2"><p>2</p></td>
+            <td id="led3"><p>3</p></td>
+        </tr>
+    </table>
+    <h1>BUTTON</h1>
+    <table border="1">
+        <tr>
+            <td id="bt1"><p>1</p></td>
+            <td id="bt2"><p>2</p></td>
+            <td id="bt3"><p>3</p></td>
+        </tr>
+    </table>
+    <h1>PROMPT</h1>
+    <table border="1">
+        <tr>
+            <td><p id="pt1">1</p></td>
+            <td><p id="pt2">2</p></td>
+            <td><p id="pt3">3</p></td>
+        </tr>
+    </table>
+    
+    <script>
+        var c1 = document.querySelector('#led1');
+        var c2 = document.querySelector('#led2');
+        var c3 = document.querySelector('#led3');
+        var b1 = document.querySelector('#bt1');
+        var b2 = document.querySelector('#bt2');
+        var b3 = document.querySelector('#bt3');
+        var p1 = document.querySelector('#pt1');
+        var p2 = document.querySelector('#pt2');
+        var p3 = document.querySelector('#pt3');
+
+        //BUTTON 1    
+        c1.onclick = function(){
+            bt1.bgColor = 'red';
+        }
+
+        b1.onclick = function clickAndPrompt(){
+            var fcolor = prompt("Which color do you want?");
+            p1.style.color = fcolor;
+        }
+
+        p1.onclick = function(){
+            c1.bgColor = p1.style.color;
+        }
+
+        //BUTTON 2
+        c2.onclick = function(){
+            bt2.bgColor = 'yellow';
+        }
+
+        b2.onclick = function clickAndPrompt(){
+            var fcolor = prompt("Which color do you want?");
+            p2.style.color = fcolor;
+        }
+
+        p2.onclick = function(){
+            c2.bgColor = p2.style.color;
+        }
+
+        //BUTTON 3
+        c3.onclick = function(){
+            bt3.bgColor = 'green';
+        }
+
+        b3.onclick = function clickAndPrompt(){
+            var fcolor = prompt("Which color do you want?");
+            p3.style.color = fcolor;
+        }
+
+        p3.onclick = function(){
+            c3.bgColor = p3.style.color;
+        }
+ 
+    </script>
+</body>
+</html>

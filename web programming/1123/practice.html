@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="result">firstname</p>
+    <p id="age">Age</p>
+    <p id="color1">Red</p>
+    <p id="color2">Green</p>
+    <p id="color3">Blue</p>
+    <h1 id="name_result"></h1>
+    <h1 id="age_result"></h1>
+    <h1 id="color_final">Color</h1>
+    <script>
+        function clickAndPrompt(){
+            if(this.id == "result"){
+                var temp = prompt("What's your name?");
+                var result = document.querySelector("#name_result");
+                result.innerHTML = "<b>Welcome "+temp+"</b>";
+            }
+
+            if(this.id == "age"){
+                var temp = prompt("How old are you?");
+                var result = document.querySelector("#age_result");
+                result.innerHTML = "<b>I'm "+temp+" years old</b>";
+            }
+        }
+        function clickAndColor(){
+            if(this.id == "color1"){
+                var color = document.querySelector('#color_final');
+                color.style.color = 'red';
+            }
+            if(this.id == "color2"){
+                var color = document.querySelector('#color_final');
+                color.style.color = 'green';
+            }
+            if(this.id == "color3"){
+                var color = document.querySelector('#color_final');
+                color.style.color = 'blue';
+            }
+        }
+        //Text section
+        var firstname = document.querySelector("#result");
+        firstname.onclick = clickAndPrompt;
+        var age = document.querySelector("#age");
+        age.onclick = clickAndPrompt;
+
+        //color section
+        var red = document.querySelector("#color1");
+        red.onclick = clickAndColor;
+        var green = document.querySelector("#color2");
+        green.onclick = clickAndColor;
+        var blue = document.querySelector("#color3");
+        blue.onclick = clickAndColor;
+    </script>
+</body>
+</html>
