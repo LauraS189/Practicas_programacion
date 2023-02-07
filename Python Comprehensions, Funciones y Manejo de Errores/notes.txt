@@ -1,0 +1,43 @@
+---------------------LIST COMPREHENSION -------------------- 
+  element      for in iterable        if conditional
+     |          |__________|            |_________|
+  elemento     ciclo donde se         condición opcional
+             extraen elementos de       para filtral
+              cualquier iterable          elementos
+
+[i*2 for i in range(1,101) if i%2==0]
+
+--------------- Lambda Function ----------
+¿Que es lambda?
+Son conocidas como Funciones Anónimas o lambdas, 
+en donde no tienen un identificador o no tienen un nombre, 
+se puede definir su estructura de la siguiente manera: 
+         lambda argumentos: expresión 
+las funciones lambda pueden tener los argumentos que se requieran 
+pero solo una linea de código o una expresión.
+
+Sintaxis
+lambda arguments : expression
+
+-----------Higher order Function ----------------
+Ejecutar una funcion dentro de una función
+
+def func1(x):
+   return x + 1
+
+def high_ord_func(x, func):
+   return x + func --> Ejemplo
+
+result = high_ord_func(5,func1) --> Solo se envia definición de la función, 
+                                    no se agregar el parametro de entrada
+print(result) --> 11
+
+--------------- Función MAP en Python --------------
+Se tiene un array y se transforma 
+se tiene el mismo número de elementos antes y despues del map
+[pollo, vaca, naranja, papa] --> cook() --> [pollo asado, carne, jugo, papas fritas]
+
+-->MAP Y DICCIONARIOS 
+Cuando se trabaja con diccionarios toca tener cuidado con el map ya que se
+Puede modificar el array original y esto puede generar problemas de memoria
+El map no genera un nuevo diccionario 
