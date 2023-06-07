@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProyectoGroup</title>
+    <link rel="stylesheet" href="css/index_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <section class="section-fromulario">
+            <form action="">
+                <section class="section-formulario-top">
+                    <fieldset>
+                        <label for="rol">Rol</label>
+                        <input list="rolOptions" id="rol" name="rol" required>
+                        <datalist id="rolOptions">
+                            <option value="Administrativo"></option>
+                            <option value="Estudiante"></option>
+                            <option value="Docente"></option>
+                        </datalist>
+                    </fieldset>
+                </section>
+
+                <section class="section-formulario-izquierda">
+
+                    <fieldset>
+                        <label for="nombre">Nombre(s) </label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <label for="tipoDocumento">Tipo de documento</label>
+                        <input list="tdOptions" id="tipoDocumento" name="tipoDocumento" required>
+                        <datalist id="tdOptions">
+                            <option value="CC">Cédula de Ciudadanía</option>
+                            <option value="CE">Cédula de Extranjería</option>
+                            <option value="PI">Pasaporte Internacional</option>
+                        </datalist>
+                    </fieldset>
+
+                    <fieldset>
+                        <label for="numero_contacto">Número de contacto</label>
+                        <input type="number" id="numero_contacto" name="numero_contacto" required>
+                    </fieldset>
+
+                </section>
+
+                <section class="section-formulario-derecha">
+
+                    <fieldset>
+                        <label for="apellido">Apellido(s)</label>
+                        <input type="text" v-model="apellido" id="apellido" name="apellido" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <label for="numero_documento">Número de Documento</label>
+                        <input type="number" v-model.number="nro_documento_usuario" id="numero_documento"
+                            name="numero_documento" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <label for="correo">Correo</label>
+                        <input type="email" id="correo" name="correo" required>
+                    </fieldset>
+
+                </section>
+
+                <section class="section-formulario-bottom">
+
+                    <button id="crear">
+                        Enviar
+                    </button>
+
+                </section>
+
+            </form>
+        </section>
+    </main>
+</body>
+</html>
